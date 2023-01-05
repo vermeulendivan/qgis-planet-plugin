@@ -78,6 +78,455 @@ QUADS_PER_PAGE = 50
 MAX_QUADS_TO_DOWNLOAD = 100
 MAX_AREA_TO_DOWNLOAD = 100000
 
+# =========================================================== CAN BE MOVED
+GROUP_NAME = 'name'
+GROUP_KEYS = 'keys'
+
+GROUP_ALL = {
+    GROUP_NAME: 'All',
+    GROUP_KEYS: []
+}
+GROUP_OTHER = {
+    GROUP_NAME: 'Other',
+    GROUP_KEYS: []
+}
+
+GROUP_AFGHANISTAN = {
+    GROUP_NAME: 'Afghanistan',
+    GROUP_KEYS: ['afghanistan', 'nangarhar']
+}
+GROUP_ROADS_AND_BUILDINGS = {
+    GROUP_NAME: 'Roads and buildings',
+    GROUP_KEYS: ['roads and buildings', 'road and building']
+}
+GROUP_ANALYTICS = {
+    GROUP_NAME: 'Analytics',
+    GROUP_KEYS: ['analytics', 'analytic']
+}
+GROUP_OCEAN = {
+    GROUP_NAME: 'Ocean',
+    GROUP_KEYS: [
+        'andaman sea',
+        'indian ocean',
+        'south pacific reef',
+        'coral sea',
+        'hawaii reef',
+        'mesoamerica reef',
+        'moorea reef',
+        'red sea',
+        'small systems reef',
+        'southwest pacific',
+        'subtropical eastern reef',
+        'timor sea',
+        'tropical eastern pacific',
+        'west indian ocean'
+    ]
+}
+GROUP_ANZO_AGRO = {
+    GROUP_NAME: 'Anzo Agro',
+    GROUP_KEYS: ['anzo agro']
+}
+GROUP_ARCTIC = {
+    GROUP_NAME: 'Arctic',
+    GROUP_KEYS: ['arctic']
+}
+GROUP_USA = {
+    GROUP_NAME: 'USA',
+    GROUP_KEYS: [
+        'usa',
+        'usda',
+        'arkansas',
+        'california',
+        'continental us',
+        'lake guntersville',
+        'maine',
+        'ford basin',
+        'powder river basin',
+        'missouri',
+        'new mexico',
+        'la skysat',
+        'west coast us'
+    ]
+}
+GROUP_KENYA = {
+    GROUP_NAME: 'Kenya',
+    GROUP_KEYS: ['kenya']
+}
+GROUP_Australia = {
+    GROUP_NAME: 'Australia',
+    GROUP_KEYS: ['australia', 'aus', 'queensland']
+}
+GROUP_NEW_ZEALAND = {
+    GROUP_NAME: 'New Zealand',
+    GROUP_KEYS: ['new zealand', 'nz']
+}
+GROUP_BAYER = {
+    GROUP_NAME: 'Bayer',
+    GROUP_KEYS: ['bayer']
+}
+GROUP_INDONESIA = {
+    GROUP_NAME: 'Indonesia',
+    GROUP_KEYS: ['indonesia', 'berau']
+}
+GROUP_INDIA = {
+    GROUP_NAME: 'India',
+    GROUP_KEYS: ['india', 'bhatinda']
+}
+GROUP_GERMANY = {
+    GROUP_NAME: 'Germany',
+    GROUP_KEYS: ['germany', 'bkg']
+}
+GROUP_BULGARIA = {
+    GROUP_NAME: 'Bulgaria',
+    GROUP_KEYS: ['bulgaria']
+}
+GROUP_CAMPBELL = {
+    GROUP_NAME: 'Campbell',
+    GROUP_KEYS: ['campbell']
+}
+GROUP_Global = {
+    GROUP_NAME: 'Global',
+    GROUP_KEYS: ['global']
+}
+GROUP_CHRISTIAN = {
+    GROUP_NAME: 'Christian',
+    GROUP_KEYS: ['christian']
+}
+GROUP_COLOMBIA = {
+    GROUP_NAME: 'Colombia',
+    GROUP_KEYS: ['colombia']
+}
+GROUP_CZECHIA = {
+    GROUP_NAME: 'Czechia',
+    GROUP_KEYS: ['czechia']
+}
+GROUP_DESERT_RESEARCH_INSTITUTE = {
+    GROUP_NAME: 'Desert Research Institute',
+    GROUP_KEYS: ['desert research institute']
+}
+GROUP_AFRICA = {
+    GROUP_NAME: 'Africa',
+    GROUP_KEYS: ['africa']
+}
+GROUP_MICRONESIA = {
+    GROUP_NAME: 'Micronesia',
+    GROUP_KEYS: ['micronesia']
+}
+GROUP_SOLOMONS = {
+    GROUP_NAME: 'Solomons',
+    GROUP_KEYS: ['solomons']
+}
+GROUP_EUROPE = {
+    GROUP_NAME: 'Europe',
+    GROUP_KEYS: ['europe']
+}
+GROUP_FOREST_RESOURCE_CONSULTANTS = {
+    GROUP_NAME: 'Forest resource consultants',
+    GROUP_KEYS: ['forest resource consultants']
+}
+GROUP_FREEPORT_MCMORAN = {
+    GROUP_NAME: 'Freeport McMoran',
+    GROUP_KEYS: ['freeport mcmoran']
+}
+GROUP_GEORGIA_PACIFIC = {
+    GROUP_NAME: 'Georgia Pacific',
+    GROUP_KEYS: ['georgia pacific']
+}
+GROUP_GREEN_DIAMOND = {
+    GROUP_NAME: 'Green Diamond',
+    GROUP_KEYS: ['green diamond']
+}
+GROUP_HANCOCK = {
+    GROUP_NAME: 'Hancock',
+    GROUP_KEYS: ['hancock']
+}
+GROUP_HUDBAY = {
+    GROUP_NAME: 'Hudbay',
+    GROUP_KEYS: ['hudbay']
+}
+GROUP_HUMBOLT = {
+    GROUP_NAME: 'Humbolt',
+    GROUP_KEYS: ['humbolt']
+}
+GROUP_WEATHER = {
+    GROUP_NAME: 'Weather',
+    GROUP_KEYS: ['weather', 'hurricane', 'cyclone']
+}
+GROUP_HYDRO_ENGINEERING = {
+    GROUP_NAME: 'Hydro Engineering',
+    GROUP_KEYS: ['hydro engineering']
+}
+GROUP_SYRACUSE = {
+    GROUP_NAME: 'Syracuse',
+    GROUP_KEYS: ['syracuse']
+}
+GROUP_IMAGESAT = {
+    GROUP_NAME: 'ImageSat',
+    GROUP_KEYS: ['imagesat']
+}
+GROUP_IROGUOIS = {
+    GROUP_NAME: 'Iroguois',
+    GROUP_KEYS: ['iroguois']
+}
+GROUP_JAPAN = {
+    GROUP_NAME: 'Japan',
+    GROUP_KEYS: ['japan']
+}
+GROUP_JDAVIS_ROLLING = {
+    GROUP_NAME: 'JDavis Rolling',
+    GROUP_KEYS: ['jdavis rolling']
+}
+GROUP_CANADA = {
+    GROUP_NAME: 'Canada',
+    GROUP_KEYS: [
+        'alberta',
+        'manitoba',
+        'brunswick',
+        'nova scotia',
+        'saskatchewan'
+    ]
+}
+GROUP_KARI = {
+    GROUP_NAME: 'Kari',
+    GROUP_KEYS: ['kari']
+}
+GROUP_LANGDALE_FOREST = {
+    GROUP_NAME: 'Langdale Forest',
+    GROUP_KEYS: ['langdale forest']
+}
+GROUP_BRAZIL = {
+    GROUP_NAME: 'Brazil',
+    GROUP_KEYS: ['brazil']
+}
+GROUP_MEDRES = {
+    GROUP_NAME: 'Medres',
+    GROUP_KEYS: ['medres']
+}
+GROUP_NAGURSKOVE = {
+    GROUP_NAME: 'Nagurskove',
+    GROUP_KEYS: ['nagurskove']
+}
+GROUP_MALI = {
+    GROUP_NAME: 'Mali',
+    GROUP_KEYS: ['mali']
+}
+GROUP_NORWAY = {
+    GROUP_NAME: 'Norway',
+    GROUP_KEYS: ['norway']
+}
+GROUP_ASIA = {
+    GROUP_NAME: 'Asia',
+    GROUP_KEYS: [
+        'asia',
+        'china',
+        'indonesia',
+        'india',
+        'taiwan',
+        'japan'
+    ]
+}
+GROUP_CARIBBEAN = {
+    GROUP_NAME: 'Caribbean',
+    GROUP_KEYS: ['caribbean']
+}
+GROUP_ARABIAN = {
+    GROUP_NAME: 'Arabian',
+    GROUP_KEYS: ['arabian']
+}
+GROUP_ONE_SOIL_NETHERLANDS = {
+    GROUP_NAME: 'One soil Netherlands',
+    GROUP_KEYS: ['one soil netherlands']
+}
+GROUP_PERU = {
+    GROUP_NAME: 'Peru',
+    GROUP_KEYS: ['peru']
+}
+GROUP_PLATEL = {
+    GROUP_NAME: 'Platel',
+    GROUP_KEYS: ['platel']
+}
+GROUP_POINT_REYES = {
+    GROUP_NAME: 'Point Reyes',
+    GROUP_KEYS: ['point reyes']
+}
+GROUP_PROGEA = {
+    GROUP_NAME: 'ProGea',
+    GROUP_KEYS: ['progea']
+}
+GROUP_PLANETSCOPE = {
+    GROUP_NAME: 'PlanetScope',
+    GROUP_KEYS: ['planetscope', 'ps analytic']
+}
+GROUP_RAYONIER_ADV_MATERIALS = {
+    GROUP_NAME: 'Rayonier Adv Materials',
+    GROUP_KEYS: ['rayonier adv materials']
+}
+GROUP_SALO_AI = {
+    GROUP_NAME: 'Salo AI',
+    GROUP_KEYS: ['salo ai']
+}
+GROUP_SAN_LUIS_RESERVOIR = {
+    GROUP_NAME: 'San Luis Reservoir',
+    GROUP_KEYS: ['san luis reservoir']
+}
+GROUP_BELIZE = {
+    GROUP_NAME: 'Belize',
+    GROUP_KEYS: ['belize']
+}
+GROUP_SAUGAHATCHEE = {
+    GROUP_NAME: 'Saugahatchee',
+    GROUP_KEYS: ['saugahatchee']
+}
+GROUP_SERBIA = {
+    GROUP_NAME: 'Serbia',
+    GROUP_KEYS: ['serbia', 'serbian']
+}
+GROUP_SETTONG_FARMS = {
+    GROUP_NAME: 'Settong Farms',
+    GROUP_KEYS: ['settong farms']
+}
+GROUP_SIF = {
+    GROUP_NAME: 'SIF',
+    GROUP_KEYS: ['sif']
+}
+GROUP_SILVICS = {
+    GROUP_NAME: 'Silvics',
+    GROUP_KEYS: ['silvics']
+}
+GROUP_SIME_DARBY = {
+    GROUP_NAME: 'Sime Darby',
+    GROUP_KEYS: ['sime darby']
+}
+GROUP_SOUTH_AMERICA = {
+    GROUP_NAME: 'South America',
+    GROUP_KEYS: ['south america']
+}
+GROUP_CHINA = {
+    GROUP_NAME: 'China',
+    GROUP_KEYS: ['china']
+}
+GROUP_STANFORD_ARCHIVE = {
+    GROUP_NAME: 'Stanford Archive',
+    GROUP_KEYS: ['stanford archive']
+}
+GROUP_SUPERDOVE = {
+    GROUP_NAME: 'Superdove',
+    GROUP_KEYS: ['superdove']
+}
+GROUP_TAIWAN = {
+    GROUP_NAME: 'Taiwan',
+    GROUP_KEYS: ['taiwan']
+}
+GROUP_TUNISIA = {
+    GROUP_NAME: 'Tunisia',
+    GROUP_KEYS: ['tunisia']
+}
+GROUP_UNITED_ARAB_EMIRATES = {
+    GROUP_NAME: 'United Arab Emirates',
+    GROUP_KEYS: ['united arab emirates']
+}
+GROUP_UKRAINE = {
+    GROUP_NAME: 'Ukraine',
+    GROUP_KEYS: ['ukraine']
+}
+GROUP_URUGAUY = {
+    GROUP_NAME: 'Urugauy',
+    GROUP_KEYS: ['urugauy']
+}
+GROUP_WAYERHAEUSER = {
+    GROUP_NAME: 'Waygaeuser',
+    GROUP_KEYS: ['waygaeuser']
+}
+GROUP_WV_QUANTUM = {
+    GROUP_NAME: 'WV Quantum',
+    GROUP_KEYS: ['wv quantum']
+}
+GROUP_ZEP_RE = {
+    GROUP_NAME: 'Zep-RE',
+    GROUP_KEYS: ['zep-re']
+}
+
+LIST_BASEMAP_GROUPS = [
+    GROUP_AFGHANISTAN,
+    GROUP_ROADS_AND_BUILDINGS,
+    GROUP_ANALYTICS,
+    GROUP_OCEAN,
+    GROUP_ANZO_AGRO,
+    GROUP_ARCTIC,
+    GROUP_USA,
+    GROUP_KENYA,
+    GROUP_Australia,
+    GROUP_NEW_ZEALAND,
+    GROUP_BAYER,
+    GROUP_INDONESIA,
+    GROUP_INDIA,
+    GROUP_GERMANY,
+    GROUP_BULGARIA,
+    GROUP_CAMPBELL,
+    GROUP_Global,
+    GROUP_CHRISTIAN,
+    GROUP_COLOMBIA,
+    GROUP_CZECHIA,
+    GROUP_DESERT_RESEARCH_INSTITUTE,
+    GROUP_AFRICA,
+    GROUP_MICRONESIA,
+    GROUP_SOLOMONS,
+    GROUP_EUROPE,
+    GROUP_FOREST_RESOURCE_CONSULTANTS,
+    GROUP_FREEPORT_MCMORAN,
+    GROUP_GEORGIA_PACIFIC,
+    GROUP_GREEN_DIAMOND,
+    GROUP_HANCOCK,
+    GROUP_HUDBAY,
+    GROUP_HUMBOLT,
+    GROUP_WEATHER,
+    GROUP_HYDRO_ENGINEERING,
+    GROUP_SYRACUSE,
+    GROUP_IMAGESAT,
+    GROUP_IROGUOIS,
+    GROUP_JAPAN,
+    GROUP_JDAVIS_ROLLING,
+    GROUP_CANADA,
+    GROUP_KARI,
+    GROUP_LANGDALE_FOREST,
+    GROUP_BRAZIL,
+    GROUP_MEDRES,
+    GROUP_NAGURSKOVE,
+    GROUP_MALI,
+    GROUP_NORWAY,
+    GROUP_ASIA,
+    GROUP_CARIBBEAN,
+    GROUP_ARABIAN,
+    GROUP_ONE_SOIL_NETHERLANDS,
+    GROUP_PERU,
+    GROUP_PLATEL,
+    GROUP_POINT_REYES,
+    GROUP_PROGEA,
+    GROUP_PLANETSCOPE,
+    GROUP_RAYONIER_ADV_MATERIALS,
+    GROUP_SALO_AI,
+    GROUP_SAN_LUIS_RESERVOIR,
+    GROUP_BELIZE,
+    GROUP_SAUGAHATCHEE,
+    GROUP_SERBIA,
+    GROUP_SETTONG_FARMS,
+    GROUP_SIF,
+    GROUP_SILVICS,
+    GROUP_SIME_DARBY,
+    GROUP_SOUTH_AMERICA,
+    GROUP_CHINA,
+    GROUP_STANFORD_ARCHIVE,
+    GROUP_SUPERDOVE,
+    GROUP_TAIWAN,
+    GROUP_TUNISIA,
+    GROUP_UNITED_ARAB_EMIRATES,
+    GROUP_UKRAINE,
+    GROUP_URUGAUY,
+    GROUP_WAYERHAEUSER,
+    GROUP_WV_QUANTUM,
+    GROUP_ZEP_RE
+]
+
 PLACEHOLDER_THUMB = ":/plugins/planet_explorer/thumb-placeholder-128.svg"
 
 plugin_path = os.path.split(os.path.dirname(__file__))[0]
@@ -171,6 +620,7 @@ class BasemapsWidget(BASE, WIDGET):
         self.btnBasemapsFilter.clicked.connect(self._apply_filter)
 
         self.comboCadence.currentIndexChanged.connect(self.cadence_selected)
+        self.comboGroup.currentIndexChanged.connect(self.group_selected)
 
         self.textBrowserNoAccess.setOpenLinks(False)
         self.textBrowserNoAccess.setOpenExternalLinks(False)
@@ -181,6 +631,7 @@ class BasemapsWidget(BASE, WIDGET):
 
     def init(self):
         if not self._initialized:
+            self.populate_groups()
             if self.series():
                 self.stackedWidget.setCurrentWidget(self.searchPage)
                 self.btnSeries.setChecked(True)
@@ -202,10 +653,16 @@ class BasemapsWidget(BASE, WIDGET):
         self.quadsTree.setAllChecked(checked)
 
     def collapse_state_changed(self, collapsed):
+
+        print('collapse state changed')
+
         if not collapsed:
             self.set_filter_visibility()
 
     def set_filter_visibility(self):
+
+        print('set filter visi')
+
         is_one_off = self.btnOneOff.isChecked()
         if is_one_off:
             self.grpBoxFilter.setVisible(False)
@@ -265,14 +722,40 @@ class BasemapsWidget(BASE, WIDGET):
 
     @waitcursor
     def series(self):
+
+        print('series')
+
         if self._series is None:
             self._series = []
             response = self.p_client.list_mosaic_series()
             for page in response.iter():
                 self._series.extend(page.get().get(SERIES))
+
+            for series in self._series:
+                series_name = series.get('name').lower()
+                groups_to_add = []
+                for basemap_group in LIST_BASEMAP_GROUPS:
+                    group_name = basemap_group.get(GROUP_NAME)
+                    group_keys = basemap_group.get(GROUP_KEYS)
+                    for group_key in group_keys:
+                        if group_key in series_name:
+                            groups_to_add.append(group_name)
+                            break
+
+                if len(groups_to_add) == 0:
+                    # If a series has not been assigned it is assigned to 'Other'
+                    series['series_group'] = ['Other']
+                else:
+                    series['series_group'] = groups_to_add
+
+            print(str(self._series))
+
         return self._series
 
     def _apply_filter(self):
+
+        print('apply filter')
+
         text = self.textBasemapsFilter.text()
         mosaics = self._get_filtered_mosaics(text)
         series = self._get_filtered_series(text)
@@ -285,8 +768,14 @@ class BasemapsWidget(BASE, WIDGET):
         self.comboSeriesName.addItem("Select a series or mosaic", None)
         for m in mosaics:
             self.comboSeriesName.addItem(m[NAME], (m, False))
+
+            #print('apply filter mosaic: ' + str(m[NAME]))
+
         self.comboSeriesName.insertSeparator(len(mosaics))
         for s in series:
+
+            #print('apply filter series: ' + s[NAME])
+
             self.comboSeriesName.addItem(s[NAME], (s, True))
 
     def _get_filtered_mosaics(self, text):
@@ -304,17 +793,51 @@ class BasemapsWidget(BASE, WIDGET):
         self.mosaicsList.set_only_sr_basemaps(self.chkOnlySRBasemaps.isChecked())
 
     def cadence_selected(self):
+
+        print('cadence selected')
+
         cadence = self.comboCadence.currentData()
         self.comboSeriesName.blockSignals(True)
         self.comboSeriesName.clear()
         self.comboSeriesName.addItem("Select a series", None)
         series = self.series_for_interval(cadence)
+
+        series = self.series_for_group(series)
+
         for s in series:
+
+            #print(str(s))
+
             self.comboSeriesName.addItem(s[NAME], (s, True))
         self.comboSeriesName.blockSignals(False)
         self.toggle_select_basemap_panel(True)
 
+    def group_selected(self):
+        print('group selected')
+
+    def populate_groups(self):
+
+        print('populate groups')
+
+        # Group 'All' always first in the list
+        self.comboGroup.addItem(GROUP_ALL.get(GROUP_NAME))
+
+        # Sorts the groups according to name
+        list_group_names = list(map(lambda x: x[GROUP_NAME], LIST_BASEMAP_GROUPS))
+        list_group_names_sorted = sorted(list_group_names)
+
+        for group in list_group_names_sorted:
+            # Adds each group name to the UI
+            self.comboGroup.addItem(group)
+
+        # Add the 'Other' group at the end of the list
+        self.comboGroup.addItem(GROUP_OTHER.get(GROUP_NAME))
+
+
     def populate(self, category_btn=None):
+
+        print('populate')
+
         category_btn = category_btn or self.btnAll
 
         self.mosaicsList.clear()
@@ -353,6 +876,43 @@ class BasemapsWidget(BASE, WIDGET):
             if interv == interval or interval is None:
                 series.append(s)
         return series
+
+    def series_for_group(self, series):
+        selected_group = self.comboGroup.currentText()
+
+        if selected_group == 'All':
+            return series
+        else:
+            print('not all')
+            grouped_list = []
+            for s in series:
+                series_name = s[NAME]
+                if self.series_in_group(selected_group, series_name):
+                    grouped_list.append(s)
+
+            return grouped_list
+
+    def series_in_group(self, group, series_name):
+        # ==================================================================== Rather add other property to the series which stores the group
+        if group == 'Afghanistan':
+            if series_name.startswith('Afghanistan'):
+                return True
+        elif group == 'Roads and buildings':
+            if 'road and building' in series_name:
+                return True
+        elif group == 'Analytics':
+            if series_name.startswith('Analytics'):
+                return True
+        elif group == 'Ocean':
+            if 'Andaman Sea' in series_name:
+                return True
+        elif group == 'Anzo Agro':
+            if series_name.startswith('Anzo Agro'):
+                return True
+        elif group == 'Arctic':
+            if series_name.startswith('Arctic'):
+                return True
+
 
     @waitcursor
     def mosaics_for_serie(self, serie):

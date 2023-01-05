@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>457</width>
+    <width>519</width>
     <height>559</height>
    </rect>
   </property>
@@ -182,7 +182,24 @@ font-weight: bold;
           <string>Select Basemap</string>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="2" column="0">
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelCadence">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(17, 141, 148);</string>
+            </property>
+            <property name="text">
+             <string>&lt;b&gt;Cadence&lt;/b&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btnBasemapsFilter">
+            <property name="text">
+             <string>Apply</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
            <widget class="QLabel" name="label">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
@@ -195,16 +212,6 @@ font-weight: bold;
             </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="labelCadence">
-            <property name="styleSheet">
-             <string notr="true">color: rgb(17, 141, 148);</string>
-            </property>
-            <property name="text">
-             <string>&lt;b&gt;Cadence&lt;/b&gt;</string>
             </property>
            </widget>
           </item>
@@ -221,17 +228,10 @@ font-weight: bold;
           <item row="0" column="1">
            <widget class="QLineEdit" name="textBasemapsFilter"/>
           </item>
-          <item row="0" column="2">
-           <widget class="QPushButton" name="btnBasemapsFilter">
-            <property name="text">
-             <string>Apply</string>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="1" colspan="2">
            <widget class="QComboBox" name="comboCadence"/>
           </item>
-          <item row="2" column="1" colspan="2">
+          <item row="3" column="1" colspan="2">
            <widget class="QComboBox" name="comboSeriesName">
             <property name="sizeAdjustPolicy">
              <enum>QComboBox::AdjustToContents</enum>
@@ -240,6 +240,19 @@ font-weight: bold;
              <number>1</number>
             </property>
            </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelGroup">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(17, 141, 148);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Group&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QComboBox" name="comboGroup"/>
           </item>
          </layout>
         </widget>
@@ -1202,11 +1215,11 @@ Review the quads by basemap instance.</string>
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Montserrat,sans-serif'; font-size:11pt; color:#172b4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Montserrat,sans-serif'; font-size:11pt; color:#172b4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Montserrat,sans-serif'; font-size:11pt; color:#172b4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Montserrat,sans-serif'; color:#172b4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Montserrat,sans-serif'; color:#172b4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Montserrat,sans-serif'; color:#172b4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Roboto,RobotoDraft,Helvetica,Arial,sans-serif'; font-size:8pt; color:#333333;&quot;&gt;You currently do not have access to Planet Basemaps.&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Roboto,RobotoDraft,Helvetica,Arial,sans-serif'; font-size:8pt; color:#333333;&quot;&gt;Please &lt;/span&gt;&lt;a href=&quot;https://www.planet.com/contact-sales/&quot;&gt;&lt;span style=&quot; font-family:'Roboto,RobotoDraft,Helvetica,Arial,sans-serif'; font-size:8pt; text-decoration: underline; color:#3b73af;&quot;&gt;contact sales&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Roboto,RobotoDraft,Helvetica,Arial,sans-serif'; font-size:8pt; color:#333333;&quot;&gt; to learn more about Planet Basemaps. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
