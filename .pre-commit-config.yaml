@@ -14,8 +14,10 @@ repos:
     rev: 22.6.0
     hooks:
       - id: black
+    exclude: ^(planet_explorer/tests/data/)
   - repo: https://github.com/PyCQA/flake8
     rev: 3.9.2
     hooks:
       - id: flake8
         language_version: python3
+      exclude: ^(planet_explorer/tests/data/)
